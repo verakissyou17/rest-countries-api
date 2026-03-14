@@ -23,9 +23,16 @@ function App() {
   }, [darkThemeEnabled]);
 
   const fetchData = async () => {
-    const response = await fetch("../../data.json");
-    const data = response.json();
-    return data;
+    try {
+      const response = await fetch("../../data.json");
+      if (!response.ok) {
+        throw new Error("Couldn't fetch the data.");
+      }
+      const data = response.json();
+      return data;
+    } catch (e) {
+      console.log(e.message);
+    }
   };
 
   useEffect(() => {
@@ -79,7 +86,16 @@ function App() {
             />
           }
         />
-        <Route path="/country/:code" element={<CountryPage data={data} toggleTheme={toggleTheme} darkThemeEnabled={darkThemeEnabled} />} />
+        <Route
+          path="/country/:code"
+          element={
+            <CountryPage
+              data={data}
+              toggleTheme={toggleTheme}
+              darkThemeEnabled={darkThemeEnabled}
+            />
+          }
+        />
       </Routes>
     </ThemeProvider>
   );
