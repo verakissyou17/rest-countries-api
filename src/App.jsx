@@ -5,6 +5,7 @@ import { GlobalStyles } from "./utils/GlobalStyles";
 import { Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import CountryPage from "./pages/CountryPage";
+import { useLocation } from "react-router-dom";
 
 function App() {
   const [data, setData] = useState([]);
@@ -67,6 +68,14 @@ function App() {
       arrow.classList.remove("reversed");
     }
   };
+
+  const location = useLocation();
+  useEffect(() => {
+    if (location.pathname === "/") {
+      setSearch("");
+      setRegion("");
+    }
+  }, [location.pathname]);
 
   return (
     <ThemeProvider theme={darkThemeEnabled ? darkTheme : lightTheme}>
