@@ -18,7 +18,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./public/images/FireShot%20Capture%20016%20-%20REST%20Countries%20API%20-%20[localhost].png)
+![](./public/screenshot.png)
 
 ### Links
 
