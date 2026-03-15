@@ -4,12 +4,12 @@ export const HeaderStyled = styled.header`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1.5rem 1rem;
+  padding: 1rem;
   background-color: ${({ theme }) => theme.elements};
   box-shadow: 2px 2px 4px var(--shadow);
 
   h1 {
-    font-size: clamp(1.5rem, 1.06rem + 1.878vw, 2.75rem);
+    font-size: clamp(1rem, 0.472rem + 2.254vw, 2.5rem);
     color: ${({ theme }) => theme.text};
   }
 
