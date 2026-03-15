@@ -6,7 +6,7 @@ export const MainStyled = styled.main`
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 5rem;
 
-  @media (min-width: 48em) {
+  @media (min-width: 68em) {
     padding: 4rem;
     gap: 2.5rem;
   }

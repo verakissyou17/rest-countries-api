@@ -4,7 +4,7 @@ export const HeaderStyled = styled.header`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1rem;
+  padding: 2rem;
   background-color: ${({ theme }) => theme.elements};
   box-shadow: 2px 2px 4px var(--shadow);
 
@@ -27,5 +27,9 @@ export const HeaderStyled = styled.header`
     &:hover {
       cursor: pointer;
     }
+  }
+
+  @media (min-width: 68em) {
+    padding: 2rem 4rem;
   }
 `;

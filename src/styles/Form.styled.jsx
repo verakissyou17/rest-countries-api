@@ -64,9 +64,6 @@ export const FormStyled = styled.form`
     color: ${({ theme }) => theme.text};
   }
 
-  /* option {
-    color: ${({ theme }) => theme.input};
-  } */
 
   @media (min-width: 48em) {
     flex-direction: row;
