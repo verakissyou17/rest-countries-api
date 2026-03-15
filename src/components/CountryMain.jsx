@@ -50,7 +50,7 @@ function CountryMain({ data }) {
                 </p>
                 <p>
                   <span>Population: </span>
-                  {country.population}
+                  {country.population.toLocaleString()}
                 </p>
                 <p>
                   <span>Region: </span>
