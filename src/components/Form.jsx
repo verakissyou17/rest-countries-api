@@ -9,17 +9,20 @@ function Form({ data, setRegion, setSearch }) {
     <FormStyled>
       <div className="form-group">
         <FontAwesomeIcon className="icon" icon={faSearch} />
+        <label className="sr-only" htmlFor="search"></label>
         <input
           type="text"
+          id="search"
           name="search"
           placeholder="Search for a country..."
           onChange={(e) => setSearch(e.target.value)}
         />
       </div>
+      <label className="sr-only" htmlFor="region"></label>
       <select
         onChange={(e) => setRegion(e.target.value)}
         name="region"
-        id="region-select"
+        id="region"
       >
         <option value="" defaultValue={"Filter by Region"}>
           Filter by Region
