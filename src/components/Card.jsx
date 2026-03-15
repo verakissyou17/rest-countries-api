@@ -11,7 +11,7 @@ function Card({ filteredCountries }) {
         return (
           <CardStyled key={item.alpha3Code} to={`/country/${item.alpha3Code}`}>
             <div className="img-container">
-              <img src={item.flags.svg} alt={item.name} />
+              <img src={item.flags.svg} alt={item.name} loading="lazy" />
             </div>
             <div className="section-details">
               <h2 className="subtitle">{item.name}</h2>

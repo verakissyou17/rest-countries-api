@@ -19,9 +19,14 @@ export const BodyStyled = styled.div`
     .icon {
       color: ${({ theme }) => theme.elements};
     }
+
+    &:hover {
+      cursor: pointer;
+    }
   }
 
   .reversed {
     transform: rotate(180deg);
+    transition: transform 0.5s ease;
   }
 `;

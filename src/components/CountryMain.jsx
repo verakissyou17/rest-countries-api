@@ -37,7 +37,7 @@ function CountryMain({ data }) {
       </ButtonLinkStyled>
       <CountrySectionStyled $items={borders.length}>
         <div className="img-container">
-          <img src={country.flags.svg} alt="" />
+          <img src={country.flags.svg} alt={country.name} loading="lazy" />
         </div>
         <div className="country-details">
           <div className="details-group">
