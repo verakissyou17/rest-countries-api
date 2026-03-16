@@ -22,8 +22,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: []
+- Solution URL: [https://www.frontendmentor.io/solutions/rest-countries-api-with-color-theme-switcher-RqLNis4X8w]
+- Live Site URL: [https://rest-countries-api-nine-psi.vercel.app/]
 
 ## My process
 

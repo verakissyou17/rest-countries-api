@@ -27,6 +27,7 @@ export const FormStyled = styled.form`
       font-family: var(--font-main);
       font-size: var(--fs-homepage);
       background-color: ${({ theme }) => theme.elements};
+      color: ${({theme}) => theme.text};
 
       &::placeholder {
         font-size: var(--fs-homepage);
